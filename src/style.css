@@ -482,4 +482,93 @@ a {
     .footer-address {
         text-align: center;
     }
+
+    /* Media Query dedicada para Smartphones (Até 480px) */
+@media (max-width: 480px) {
+    /* 1. Ajustes de Contêiner e Padding */
+    .header-container,
+    .hero-container,
+    .container {
+        padding: 0 16px;
+    }
+
+    .hero-section,
+    .section-padding {
+        padding: 40px 0;
+    }
+
+    /* 2. Header Mobile Ajustado */
+    .main-header {
+        padding: 10px 0;
+    }
+
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    /* Oculta os links textuais em telas muito pequenas para limpar a visualização */
+    .main-nav {
+        display: none; 
+    }
+
+    .btn-header {
+        padding: 8px 14px;
+        font-size: 0.8rem;
+    }
+
+    /* 3. Ajustes de Tipografia no Hero */
+    .hero-content h1 {
+        font-size: 1.5rem;
+        line-height: 1.3;
+        margin-bottom: 12px;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+        margin-bottom: 18px;
+    }
+
+    .badge {
+        font-size: 0.75rem;
+        padding: 4px 10px;
+        margin-bottom: 10px;
+    }
+
+    .hero-features li {
+        font-size: 0.85rem;
+    }
+
+    /* 4. Formulário e Botões */
+    .hero-form-wrapper {
+        padding: 20px;
+    }
+
+    .btn-primary {
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 0.95rem;
+        text-align: center;
+    }
+
+    /* 5. Ajuste no Botão Flutuante do WhatsApp */
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    /* Evita choque com os cards de passos e serviços */
+    .cards-grid,
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
 }
